@@ -1283,7 +1283,7 @@ private
     file_data = {}
     files.each do |file|
       i = i + 1
-      filename = file[:filename] ? file[:filename] : "gistfile#{i}"
+      filename = file[:filename] ? file[:filename] : "stdinfile#{i}#{file[:extension]}"
       file_data[filename] = {:content => file[:input]}
     end
 
